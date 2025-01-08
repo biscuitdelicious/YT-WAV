@@ -9,6 +9,7 @@
 5. `brew install ffmpeg`
 6. `ffmpeg` -> to confirm it's installed(it should have the window name `FFMPEG`
 
+Then get the code from .py file(or clone the repo if you know).
 
 Run the code in an IDE(PyCharm) or run it via terminal `python youtube_to_wav.py`(or get the directory of the file and replace it with `youtube_to_wav.py`; e.g: `python user/documents/pythonfiles/youtube_to_wav.py`).
 
