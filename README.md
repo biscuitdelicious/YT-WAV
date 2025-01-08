@@ -1,25 +1,69 @@
-## SIMPLE YOUTUBE TO HIGH QUALITY WAV
+## SIMPLE YOUTUBE TO HIGH-QUALITY WAV
 
-#### Commands to run for MAC OS:
+#### Steps to Follow (Mac OS):
 
-1. `pip install yt_dlp`
-2. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-3. `brew --version` -> should print the version
-4. `brew update` -> update
-5. `brew install ffmpeg`
-6. `ffmpeg` -> to confirm it's installed(it should have the window name `FFMPEG`
+1. **Install the YouTube Audio Downloader (yt-dlp)**:  
+   Open Terminal and type:  
+   `pip install yt_dlp`
 
-Then get the code from .py file(or clone the repo if you know).
+2. **Install Homebrew (if you don’t already have it)**:  
+   Open Terminal and type:  
+   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-Run the code in an IDE(PyCharm) or run it via terminal `python youtube_to_wav.py`(or get the directory of the file and replace it with `youtube_to_wav.py`; e.g: `python user/documents/pythonfiles/youtube_to_wav.py`).
+3. **Check if Homebrew is Installed**:  
+   Type:  
+   `brew --version`  
+   *(You should see a version number if it’s installed correctly)*  
 
-Why is this the highest quality?
-1. **FFmpeg**: A powerful tool that extracts and converts audio without losing quality. It preserves the original bitrate and uses advanced codecs for the best results.
+4. **Update Homebrew**:  
+   Type:  
+   `brew update`
 
-2. **yt-dlp**: Downloads the original audio directly from YouTube without unnecessary re-encoding. It's an improved version of youtube-dl that supports more formats and ensures higher performance.
+5. **Install FFmpeg (an audio tool)**:  
+   Type:  
+   `brew install ffmpeg`
 
-3. **Direct WAV Conversion**: The audio is downloaded in its original format (like .m4a or .webm) and converted directly to WAV (a lossless format), ensuring no quality is lost during conversion.
+6. **Check if FFmpeg is Installed**:  
+   Type:  
+   `ffmpeg`  
+   *(You should see FFmpeg details in the Terminal window)*
 
+---
 
+#### Run the Code
 
+1. **Get the Code**:  
+   - Copy the Python script into a file named `youtube_to_wav.py`, or  
+   - Download/clone the repository if you know how.
+
+2. **Run the Code**:  
+   Open Terminal and type:  
+   `python youtube_to_wav.py`  
+
+   If your file is in a specific folder, provide the full path. Example:  
+   `python /Users/YourName/Documents/youtube_to_wav.py`
+
+3. **Paste the YouTube Link**:  
+   The script will ask for the **YouTube video URL**. Paste the link and hit **Enter**.
+
+---
+
+### Why This Method Provides the Best Audio Quality
+
+1. **FFmpeg (Audio Tool)**:  
+   - Converts audio without losing any quality.  
+   - Keeps the original sound clarity by preserving the bitrate.
+
+2. **yt-dlp (Downloader)**:  
+   - Downloads the exact **original audio** directly from YouTube.  
+   - Avoids unnecessary conversions that can lower the quality(what we don't want).
+
+3. **Direct WAV Format**:  
+   - The audio is saved as **WAV**, a format that preserves all audio details without compression.  
+   - Other formats (like `.mp3`) reduce quality by shrinking the file size—WAV keeps it crystal clear.
+
+---
+
+### What You’ll Get:
+A **high-quality WAV audio file** named `output.wav` in the same folder as the script.
 
